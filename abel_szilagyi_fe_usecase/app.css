@@ -1,0 +1,107 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 40px 0;
+    background: linear-gradient(to right, #000080, #4169E1, #1E90FF);
+    color: white;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(to top, #003366, #ADD8E6);
+}
+
+.left-column, .right-column {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    width: 100%;
+}
+
+.left-column {
+    order: 2;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.right-column {
+    order: 1;
+}
+
+#product-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+
+}
+
+.product-card {
+    flex: 1 1 30%;
+    max-width: calc(33.333% - 30px);
+    min-width: 250px;
+    margin: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,2);
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+}
+
+
+.search-container {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#search-input {
+    width: 50%;
+    padding: 8px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+}
+
+#prev-btn, #next-btn, #prev-btn-bottom, #next-btn-bottom {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#top-product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px black solid;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 2);
+}
+
+h2 {
+    border-bottom: 2px solid #000;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Not-So-Boring Webshop</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <header>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search memes by name...">
+            <button id="search-button">Search</button>
+        </div>
+    
+        <div class="nav-container">
+            <button id="prev-btn" disabled>Prev</button>
+            <button id="next-btn">Next</button>
+        </div>
+    
+    </header>
+    <div class="main-content">
+        <div class="right-column">
+            <h2>Top Product:</h2>
+            <div id="top-product-container"></div>
+        </div>
+        <div class="left-column">
+            <h2>Product List:</h2>
+            <div id="product-container"></div>
+        </div>
+    </div>
+
+    
+    <!-- original product card
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150" alt="Product Image" class="product-image">
+        <div class="product-info">
+            <h2 class="product-title">Product Title</h2>
+            <p class="product-description">A short description of the product.</p>
+            <p class="product-price">€25.00</p>
+            <p class="product-rating">Rating: 7/10</p>
+        </div>
+    </div>
+    -->
+
+    <div class="nav-container" id="nav-container-bottom">
+        <button id="prev-btn-bottom" disabled>Prev</button>
+        <button id="next-btn-bottom">Next</button>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
